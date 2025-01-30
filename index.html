@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers</title>
+    <style>
+        .greetings {
+            letter-spacing: 5px; /* Ajusta el espacio entre letras */
+            text-align: center; /* Centrar el texto */
+            display: flex;
+            flex-direction: column; /* Organiza el texto en columnas */
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+        .greetings div {
+            display: flex;
+            justify-content: center;
+        }
+        .greetings span {
+            margin-right: 5px; /* Espacio entre cada letra */
+            font-size: 5rem;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 0 25px #ff00ff, 0 0 50px #ff00ff, 0 0 75px #ff00ff;
+            animation: glow 1.5s infinite alternate, blink 2.5s infinite;
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 25px #ff00ff, 0 0 50px #ff00ff, 0 0 75px #ff00ff;
+            }
+            100% {
+                text-shadow: 0 0 25px #ff00ff, 0 0 35px #ff00ff, 0 0 45px #ff00ff;
+            }
+        }
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="greetings">
+        <div>
+            <span>H</span>
+            <span>O</span>
+            <span>L</span>
+            <span>A</span>
+            <span>&nbsp;</span>
+            <span>M</span>
+            <span>I</span>
+            <span>&nbsp;</span>
+            <span>A</span>
+            <span>M</span>
+            <span>O</span>
+            <span>R</span>
+        </div>
+        <div>
+            <span>M</span>
+            <span>I</span>
+            <span>&nbsp;</span>
+            <span>N</span>
+            <span>I</span>
+            <span>Ñ</span>
+            <span>A</span>
+            <span>&nbsp;</span>
+            <span>P</span>
+            <span>R</span>
+            <span>E</span>
+            <span>C</span>
+            <span>I</span>
+            <span>O</span>
+            <span>S</span>
+            <span>A</span>
+        </div>
+    </div>
+    <div class="description">
+        <span>¿Quieres ser mi San Valentín?</span>
+    </div>
+    <div class="button">
+        <button class="botones">
+            <a href="flower.html" style="color: #fff;">SI QUIERO</a>
+        </button>
+    </div>
+
+</body>
+
+</html>
